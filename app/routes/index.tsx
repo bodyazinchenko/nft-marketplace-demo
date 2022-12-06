@@ -1,4 +1,4 @@
-import NftList from "~/components/nft/list";
+import NftList from "~/components/ui/nft/list";
 import nfts from '~/content/meta.json';
 import type { NftMeta } from "~/types/nft";
 
