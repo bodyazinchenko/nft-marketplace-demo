@@ -9,6 +9,7 @@ import {
 } from "@remix-run/react";
 import styles from "./styles/app.css";
 import BaseLayout from './components/ui/layout/BaseLayout';
+import Web3Provider from "./components/providers/web3";
 
 export function links() {
   return [{ rel: "stylesheet", href: styles }]
@@ -29,7 +30,9 @@ export default function App() {
       </head>
       <body>
         <BaseLayout>
-          <Outlet />
+          <Web3Provider>
+            <Outlet />
+          </Web3Provider>
         </BaseLayout>
         <ScrollRestoration />
         <Scripts />
